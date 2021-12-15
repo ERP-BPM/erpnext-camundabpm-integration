@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-color">
+
+  <a [routerLink]="['']">
+    <img class="m-3" src="../../../assets/logo.png" width="30" height="30" alt="">
+  </a>
+  <b>Empleados</b>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expan ded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div style="height: 2em; margin-left: 1em; margin-right: 1em; width: 1px; border: black 1px solid;"></div>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['list']" routerLinkActive="active">Lista</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['create']" routerLinkActive="active">Crear</a>
+      </li>
+
+    </ul>
+  </div>
+
+</nav>
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

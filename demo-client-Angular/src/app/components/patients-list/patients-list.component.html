@@ -1,0 +1,36 @@
+<div class="d-flex flex-row justify-content-between flex-wrap md:flex:-nowrap">
+
+  <div class="p-4" *ngFor="let patient of patients">
+
+    <div style="width: 35em;" class="card text-center">
+      <div class="card-header">
+        <h5 class="card-title">
+          {{patient.nombre}} {{patient.apellido_paterno}} {{patient.apellido_materno}}
+        </h5>
+      </div>
+      <div class="card-body">
+
+        <p class="card-text"><b>Género:</b> {{patient.genero}}</p>
+        <p class="card-text"><b>CURP:</b> {{patient.curp}}</p>
+        <p class="card-text"><b>Correo:</b> {{patient.email}}</p>
+        <p class="card-text"><b>Fecha de nacimiento:</b> {{patient.fecha_nacimiento}}</p>
+        <p class="card-text"><b>Estado civil:</b> {{patient.estado_civil}}</p>
+        <p class="card-text"><b>NSS:</b> {{patient.nss}}</p>
+        <p class="card-text"><b>Grupo sanguíneo:</b> {{patient.grupo_sanguineo}}</p>
+
+      </div>
+      <div class="card-footer d-flex justify-content-around d-flex flex-row flex-wrap">
+        <a (click)="confirmIngress(patient)" class="btn btn-primary m-1">Confirmar ingreso</a>
+        <a (click)="infoAboutPatient(patient)" class="btn btn-primary m-1">Recepción documentos NSS</a>
+        <a (click)="takeSignalConfirm(patient)" class="btn btn-primary m-1">Toma de signos vitales</a>
+        <a (click)="receptionComfirm(patient)" class="btn btn-primary m-1">Recepción de resultados</a>
+        <a (click)="dischargeConfirm(patient)" class="btn btn-primary m-1">Alta de paciente</a>
+        
+        <a (click)="deletePatient(patient)" class="btn btn-danger m-1">Eliminar</a>
+        <a class="btn btn-primary m-1">Actualizar</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>

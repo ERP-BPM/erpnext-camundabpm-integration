@@ -1,0 +1,31 @@
+<div class="d-flex flex-row justify-content-between flex-wrap">
+
+  <div style="width: 35em;" class="p-4" *ngFor="let employee of employers">
+
+    <div class="card text-center">
+      <div class="card-header">
+        <h5 class="card-title">
+          {{employee.nombre}} {{employee.apellido_paterno}} {{employee.apellido_materno}}
+        </h5>
+      </div>
+      <div class="card-body">
+
+        <p class="card-text"><b>Genero:</b> {{employee.genero}}</p>
+        <p class="card-text"><b>CURP:</b> {{employee.curp}}</p>
+        <p class="card-text"><b>RFC:</b> {{employee.rfc}}</p>
+        <p class="card-text"><b>Correo:</b> {{employee.email}}</p>
+        <p class="card-text"><b>Fecha de nacimiento:</b> {{employee.fecha_nacimiento}}</p>
+        <p class="card-text"><b>Fecha contratacion:</b> {{employee.fecha_contratacion}}</p>
+        <p class="card-text"><b>Estado civil:</b> {{employee.estado_civil}}</p>
+        <p class="card-text"><b>Cargo:</b> {{employee.cargo}}</p>
+
+      </div>
+      <div class="card-footer d-flex justify-content-around">
+        <a (click)="deleteEmployee(employee)" class="btn btn-danger">Eliminar</a>
+        <a class="btn btn-primary">Actualizar</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>

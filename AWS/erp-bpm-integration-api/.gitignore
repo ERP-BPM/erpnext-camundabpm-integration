@@ -1,0 +1,8 @@
+*.DS_Store
+template
+node_modules
+package-lock.json
+build
+send-message/node_modules/
+start-process/node_modules/
+start-process/utils/env.js

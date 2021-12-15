@@ -1,0 +1,53 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <label>Nombre</label>
+    <input class="form-control" type="text" formControlName="nombre">
+  </div>
+
+  <div class="form-group">
+    <label>Apellido paterno</label>
+    <input class="form-control" type="text" formControlName="apellido_paterno">
+  </div>
+
+  <div class="form-group">
+    <label>Apellido materno</label>
+    <input class="form-control" type="text" formControlName="apellido_materno">
+  </div>
+
+  <div class="form-group">
+    <label>CURP</label>
+    <input class="form-control" type="text" formControlName="curp">
+  </div>
+
+  <div class="form-group">
+    <label>NSS</label>
+    <input class="form-control" type="text" formControlName="nss">
+  </div>
+
+  <div class="form-group">
+    <label>Grupo sanguineo</label>
+    <input class="form-control" type="text" formControlName="grupo_sanguineo">
+  </div>
+
+  <div class="form-group">
+    <label>Correo</label>
+    <input class="form-control" type="text" formControlName="email">
+  </div>
+
+  <div class="form-group">
+    <label>Genero</label>
+    <input class="form-control" type="text" formControlName="genero">
+  </div>
+
+  <div class="form-group">
+    <label>Estado civil</label>
+    <input class="form-control" type="text" formControlName="estado_civil">
+  </div>
+
+
+  <p *ngIf="!isValid" class="small text-danger">Todos los campos son requeridos.</p>
+
+  <input class="btn btn-block btn-primary mt-4" type="submit" value="Crear">
+
+</form>
