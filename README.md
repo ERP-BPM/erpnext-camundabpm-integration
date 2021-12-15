@@ -101,10 +101,9 @@ For a demo we use two process examples: ***(ACTUALIZA ENLACES)***
 To install Hasura its requiredhave Docker installed and configured, this will be our Microservice trigger, when a new Patient (or another Entity) is created, Hasura activates an Event, this is a webhooks that sends a POST message to an endpoint (our service start-process) and initiates the process in Camunda BPM, in operate portal we shall be the new instance of the process
 
 
-### Core Core
+### Microservice Core
 
-You can instantiate the functions in the Cloud using Openfaas (see the Installation Guide) or AWS lambda (see our Implmenetation Guide) in each case, it can be achieved using a Multiservice gestor, so, this can be used as trigger for the functions, using Javascript to create Microservices, then, is is the API and the endpoints start-process and send-message   
+You can instantiate the functions in the Cloud using Openfaas (see the [Installation Guide](https://github.com/AngelAngelopoulos/ERPNext-CamundaBPM-Integration/wiki/Open-faas-%28faas-cli%29-Environment)) or AWS lambda (see our Implmenetation Guide) in each case, it can be achieved using a Multiservice gestor, so, this can be used as trigger for the functions, using Javascript to create Microservices, then, is is the API and the endpoints start-process and send-message   
 
-# How to use this code?
 
 # Contribution
