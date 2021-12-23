@@ -25,8 +25,19 @@ THIS/
  └── README.md
 ```
 
-# Introduction
+# Introducción
 
+Este proyecto fue creado con el fin de crear un ecosistema que integre dos herramientas muy conocidad, la cuales son ERPNext y Camunda BPM. Esto es debido a que no existe, hasta el momento, manera alguna de unir estas dos herramientas para poder utilizarlas dentro de un mismo contexto.
+
+Incio como un proyecto escolar para Proyectos Computacionales en la carreara de Ingeniería en Sistemas Inteligentes, en la UASLP.
+
+Este repositorio fue creado para albergar todo lo necesario para instanciar el stack ERP-BPM además de los microservicios necesarios para iniciar la comunicacion entre los dos recurso.
+
+A continuación, se explicara la manera de implementar, instanciar y utilizar el ecosistema completo. 
+
+## Prerrequsitos
+
+Los requisitos necesarios para ello son los siguientes:
 
 # Implementation Details
 In order to implement a ready to test environment of tecnologies used in this project we need cover the configuration steps in the next sections.
